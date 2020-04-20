@@ -35,6 +35,9 @@ spec:
             - name: vegeta-targets
               mountPath: /opt/vegeta-targets.txt
               subPath: vegeta-targets.txt
+            - name: vegeta-targets
+              mountPath: /opt/payload
+              subPath: payload
           env:
             - name: AWS_ACCESS_KEY_ID
               valueFrom:

@@ -9,3 +9,5 @@ data:
     {{- range required "missing app.httpTargets" .Values.app.httpTargets }}
     {{ . }}
     {{- end }}
+  payload: |
+    {{ .Values.app.payload }}
